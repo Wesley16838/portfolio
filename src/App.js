@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link ,Redirect} from "react-rou
 import './Assets/css/styles.min.css'//css file
 import './Assets/js/scripts.min.js'//js file
 
-
+import Landingpage from './landingpage';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +15,9 @@ class App extends Component {
     };
   }
   //
-  
+  componentDidMount() {
+    this.setState({loading: false})
+}
   render() {
     
     const { loading } = this.state;
@@ -31,13 +33,12 @@ class App extends Component {
      
       <Router>
          <div className="App">
-          <Header/>
+      
           <Switch>
             <Route exact path="/" render={(props) => <Landingpage {...props} title="Portfolio"/>}/>
             
           </Switch>
-          
-          <Footer/>
+     
       </div>
       </Router>    
       

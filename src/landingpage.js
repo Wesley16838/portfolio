@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Switch, Route,NavLink } from "react-router-dom"
-
+import Header from './header'
+import Professional from './professional'
+// import Academic from './academic'
 
 class Landingpage extends Component {
   constructor(props){
@@ -17,8 +18,9 @@ class Landingpage extends Component {
   render() {
     return(
       <div className="container">
-        
-
+        <Header/>
+        <Professional/>
+        {/* <Academic/> */}
       </div>
        
       

@@ -4,36 +4,20 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-//Appollo Libraries
-import { ApolloProvider } from 'react-apollo'
-import { ApolloClient } from 'apollo-client'
-import { createHttpLink } from 'apollo-link-http'
-import { InMemoryCache } from 'apollo-cache-inmemory'
+
 
 //Redux Lidraries
 import { Provider } from "react-redux";
-import store from "./components/redux-test/store"
+
 
 //ReactDOM.render(<App />, document.getElementById('root'));
-const httpLink = createHttpLink({
-    uri: '',
-    onError: ({ networkError, graphQLErrors }) => {
-        console.log("graphQLErrors", graphQLErrors);
-        console.log("networkError", networkError);
-      }
-});
-
-const client = new ApolloClient({
-    link: httpLink,
-    cache: new InMemoryCache()
-});
 
 ReactDOM.render(
-    <Provider store={store}>
-        {/* <ApolloProvider client={client}> */}
-            <App />
-        {/* </ApolloProvider> */}
-    </Provider>,
+    
+       
+            <App />,
+       
+  
     document.getElementById('root')
 );
 
