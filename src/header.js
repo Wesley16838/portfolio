@@ -18,7 +18,7 @@ class Header extends Component {
           <div className="header-left">
             <div className="header-left-left">
                 <div>
-                    <img src={logo} className='logo'/>
+                    <img src={logo} className='logo' alt="Logo"/>
                 </div>
                 <div className="detail">
                     <p>Hello, I am</p>
@@ -41,7 +41,7 @@ class Header extends Component {
                 <p className="developer">DEVELOPER</p>        
               </div>
               <div>
-                  <img src={me} className="me"/>
+                  <img src={me} className="me" alt="Me"/>
               </div>
               <div className="name">
                <div>

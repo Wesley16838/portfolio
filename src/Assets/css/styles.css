@@ -308,7 +308,7 @@ h4 {
     .header .header-left .header-left-left {
       display: flex;
       flex-direction: column;
-      align-items: start;
+      align-items: flex-start;
       justify-content: space-between;
       padding: 60px 0px 60px 60px;
       font-family: 'Playfair Display', serif; }
@@ -364,3 +364,67 @@ h4 {
         color: #000;
         font-size: 40px;
         transform: rotate(90deg); }
+
+.professional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: 'Playfair Display', serif; }
+  .professional h1 {
+    font-size: 60px;
+    letter-spacing: 5px; }
+  .professional .professional-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .professional .professional-section .professional-part {
+      box-sizing: border-box;
+      position: relative;
+      width: 42.5%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.103), 0 6px 6px rgba(0, 0, 0, 0.164);
+      padding: 60px;
+      margin-bottom: 60px;
+      margin-left: 5%; }
+      .professional .professional-section .professional-part span {
+        position: absolute;
+        top: -25px;
+        left: -25px; }
+        .professional .professional-section .professional-part span img {
+          width: 50px;
+          -webkit-transition: 0.4s ease;
+          -moz-transition: 0.4s ease;
+          transition: 0.4s ease; }
+          .professional .professional-section .professional-part span img:hover {
+            opacity: .7; }
+      .professional .professional-section .professional-part .company-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+      .professional .professional-section .professional-part h1 {
+        font-size: 36px;
+        margin: 0px; }
+      .professional .professional-section .professional-part h3 {
+        font-size: 20px;
+        color: #b9b9b9;
+        margin: 0px; }
+      .professional .professional-section .professional-part .works {
+        width: 400px; }
+      .professional .professional-section .professional-part .works-mobile {
+        width: 180px; }
+      .professional .professional-section .professional-part .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 450px; }
+
+.academic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: 'Playfair Display', serif; }
+  .academic h1 {
+    font-size: 60px;
+    letter-spacing: 5px; }

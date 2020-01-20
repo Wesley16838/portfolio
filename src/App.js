@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Switch, Route, Link ,Redirect} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
 //includes
 import './Assets/css/styles.min.css'//css file
 import './Assets/js/scripts.min.js'//js file

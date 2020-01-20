@@ -14,7 +14,7 @@
         .header-left-left{
             display: flex;
             flex-direction: column;
-            align-items: start;
+            align-items: flex-start;
             justify-content: space-between;
            
             padding:60px 0px 60px 60px;  
@@ -93,5 +93,85 @@
                 transform: rotate(90deg);
             }
         }
+    }
+}
+
+.professional{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    font-family: 'Playfair Display', serif;
+  
+    h1{
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+    .professional-section{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        // justify-content: space-evenly;
+        
+        .professional-part{
+            box-sizing: border-box;
+            position: relative;
+            width:42.5%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.103), 0 6px 6px rgba(0, 0, 0, 0.164);
+            padding:60px;
+            margin-bottom: 60px;
+            margin-left: 5%;
+            span{
+                position: absolute;
+                top:-25px;
+                left:-25px;
+                img{
+                    width:50px;
+                    @include transition(.4s ease);
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+                
+            }
+            .company-detail{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            h1{
+                font-size:36px;
+                margin:0px;
+            }
+            h3{
+                font-size:20px;
+                color:rgb(185, 185, 185);
+                margin:0px;
+            }
+            .works{
+                width:400px;
+            }
+            .works-mobile{
+                width:180px;
+            }
+            .image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height:450px;
+            }
+        }
+    }
+}
+.academic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    font-family: 'Playfair Display', serif;
+    h1{
+        font-size: 60px;
+        letter-spacing: 5px;
     }
 }

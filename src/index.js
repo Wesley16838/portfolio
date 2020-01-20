@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 
 //Redux Lidraries
-import { Provider } from "react-redux";
+// import { Provider } from "react-redux";
 
 
 //ReactDOM.render(<App />, document.getElementById('root'));

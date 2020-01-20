@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Header from './header'
 import Professional from './professional'
-// import Academic from './academic'
+import Academic from './academic'
 
 class Landingpage extends Component {
   constructor(props){
@@ -20,7 +20,7 @@ class Landingpage extends Component {
       <div className="container">
         <Header/>
         <Professional/>
-        {/* <Academic/> */}
+        <Academic/>
       </div>
        
       
