@@ -26,7 +26,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Playfair+Display&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>PriCov</title>
   </head>
   <body>
@@ -46,11 +46,9 @@
     -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-  $(window).on('load', function(){
-      $('.load').fadeOut(500);
-  
-  })
+    AOS.init();
   </script>
     
   </body>

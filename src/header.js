@@ -15,7 +15,7 @@ class Header extends Component {
   render() {
     return(
       <div className="header">
-          <div className="header-left">
+          <div className="header-left" data-aos="fade-in"  data-aos-duration="1000">
             <div className="header-left-left">
                 <div>
                     <img src={logo} className='logo' alt="Logo"/>
@@ -37,13 +37,13 @@ class Header extends Component {
             
           </div>
           <div className="header-right">
-              <div className="header-right-left">
+              <div data-aos="fade-right" data-aos-delay="1000" className="header-right-left">
                 <p className="developer">DEVELOPER</p>        
               </div>
-              <div>
+              <div data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
                   <img src={me} className="me" alt="Me"/>
               </div>
-              <div className="name">
+              <div  data-aos="fade-left" data-aos-delay="1000" className="name">
                <div>
                   <p>W</p>
                   <p>E</p>
