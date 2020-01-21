@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 
 import logo from './Assets/img/logo2x.png'
-import me from './Assets/img/me2x.png'
+import me from './Assets/img/me_xxxl@2x.png'
+import me2 from './Assets/img/me_xxl@2x.png'
+import me3 from './Assets/img/me_xl@2x.png'
 class Header extends Component {
   constructor(props){
     super(props);
@@ -41,7 +43,22 @@ class Header extends Component {
                 <p className="developer">DEVELOPER</p>        
               </div>
               <div data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
-                  <img src={me} className="me" alt="Me"/>
+                  {/* <img src={me} /> */}
+                  <picture>
+                    <source 
+                      media="(max-width: 1200px)" 
+                      className="me" 
+                      srcset={me3}/>
+                    <source 
+                      media="(min-width: 1480px)" 
+                      className="me" 
+                      srcset={me2}/>
+                    <img 
+                      src={me}
+                      srcset={me}
+                      className="me" 
+                      alt="Me"/>
+                  </picture>
               </div>
               <div  data-aos="fade-left" data-aos-delay="1000" className="name">
                <div>

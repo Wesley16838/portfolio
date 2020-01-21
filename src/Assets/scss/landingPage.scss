@@ -9,8 +9,19 @@
     .header-left{
         display: flex;
         flex-direction: row;
-        width:40%;
-       
+        // width:calc(100% - 1100px);
+        @include xxxl-width{
+            
+            width:calc(100% - 1100px);
+        }
+        @include xxl-width{
+            
+            width:calc(100% - 900px);
+        }
+   
+        @include xl-width{
+            width:calc(100% - 620px);
+        }
         .header-left-left{
             display: flex;
             flex-direction: column;
@@ -57,23 +68,58 @@
         font-family: 'Ibarra Real Nova', serif;
         display: flex;
         flex-direction: row;
-        width:60%;
+       
+        @include xxxl-width{
+            
+            width:1100px;
+        }
+        @include xxl-width{
+            
+            width:900px;
+        }
+   
+        @include xl-width{
+            width:620px;
+        }
         .header-right-left{
             height:100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width:160px;
+           
+            @include xxxl-width{
+            
+                width:160px;
+            }
+            @include xxl-width{
+                
+                width:130px;
+            }
+       
+            @include xl-width{
+                width:100px;
+            }
             .developer{
-                font-size:140px;
+               
                 font-weight: bold;
                 font-family: 'Playfair Display', serif;
                 color:rgb(240, 240, 240);
                 transform: rotate(-90deg);
                 margin:0px;
                 letter-spacing: 10px;
-              
+                @include xxxl-width{
+            
+                    font-size:140px;
+                }
+                @include xxl-width{
+                    
+                    font-size:120px;
+                }
+           
+                @include xl-width{
+                    font-size:100px;
+                }
             }
         }
        
@@ -83,10 +129,22 @@
             height:100%;
         }
         .name{
-            width:100%;
+           
             display: flex;
             align-items: center;
             justify-content: center;
+            @include xxxl-width{
+            
+                width:100%;
+            }
+            @include xxl-width{
+                
+                width:100%;
+            }
+       
+            @include xl-width{
+                width:100%;
+            }
             p{
                 color:#000;
                 font-size: 40px;
@@ -154,6 +212,9 @@
             }
             .works-mobile{
                 width:180px;
+            }
+            .works-big{
+                width:700px;
             }
             .image{
                 display: flex;

@@ -67,11 +67,15 @@ class ProfessionalPart extends Component {
                   return(
                     <img alt='mobile' key={i} className="works-mobile" src={this.state.image}/>
                   )
+                }else if(item === '/static/media/creatop2x.8225359c.png'){
+                  return(
+                    <img alt='biglaptop' key={i} className="works-big" src={this.state.image}/>
+                  )
+                  
                 }else{
                   return(
                     <img alt='laptop' key={i} className="works" src={this.state.image}/>
                   )
-                  
                 }
              }
              )

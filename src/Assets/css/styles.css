@@ -344,6 +344,15 @@ h4 {
       justify-content: center;
       align-items: center;
       width: 160px; }
+      @media all and (min-width: 1680px) {
+        .header .header-right .header-right-left {
+          padding: 25px; } }
+      @media all and (min-width: 1480px) and (max-width: 1680px) {
+        .header .header-right .header-right-left {
+          padding: 20px; } }
+      @media all and (max-width: 1480px) {
+        .header .header-right .header-right-left {
+          padding: 15px; } }
       .header .header-right .header-right-left .developer {
         font-size: 140px;
         font-weight: bold;
@@ -413,6 +422,8 @@ h4 {
         width: 400px; }
       .professional .professional-section .professional-part .works-mobile {
         width: 180px; }
+      .professional .professional-section .professional-part .works-big {
+        width: 700px; }
       .professional .professional-section .professional-part .image {
         display: flex;
         align-items: center;
