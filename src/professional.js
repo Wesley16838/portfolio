@@ -18,7 +18,7 @@ class Professional extends Component {
   render() {
     return(
       <div className="professional">
-          <h1>Professional Projects</h1>
+          <h1 data-aos="fade-in">Professional Projects</h1>
           <div className="professional-section">
             <ProfessionalPart title="Water Treatment 
   Management Dashboard" position="Front-End Developer Intern" company="Advantech" location="Taipei, Taiwan" date="July 2019 - Aug 2019" image={advantech} url="https://dashboard-adviiot-ene-showcasemplus.wise-paas.com/frame/default?orgId=5&language=en&theme=dark&refresh=5s" first="Developed user-friendly panels with platform Grafana to visualize data using 

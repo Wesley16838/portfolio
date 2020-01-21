@@ -21,16 +21,16 @@ class ProfessionalPart extends Component {
   render() {
     
     return(
-      <div className='professional-part'>
+      <div data-aos="fade-in" data-aos-duration="1000" className='professional-part'>
          <span>
-           <a href={this.state.url} target="_blank">
+           <a href={this.state.url} target="_blank" rel="noopener noreferrer">
            {
-           this.state.url.map(item=>{
-             if(item == ''){
-              
+           this.state.url.map((item,i)=>{
+             if(item === ''){
+              return (null)
              }else{
               return(
-                <img src={url} />
+                <img key={i} alt='url' src={url} />
              )
              }
             
@@ -39,20 +39,20 @@ class ProfessionalPart extends Component {
              
            </a>
          </span>
-         <h1>{this.state.title}</h1>
-         <h3>{this.state.position}</h3>
-         <div className="company-detail">
+         <h1 data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">{this.state.title}</h1>
+         <h3 data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">{this.state.position}</h3>
+         <div data-aos="fade-in" data-aos-duration="500" data-aos-delay="500" className="company-detail">
           <h3>{this.state.company}, {this.state.location}</h3>
           <h3>{this.state.date}</h3>
          </div>
-         <ul>
+         <ul data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">
          {
-           this.state.content.map(item=>{
-             if(item == ''){
-              
+           this.state.content.map((item,i)=>{
+             if(item === ''){
+              return (null)
              }else{
               return(
-                <li key={item}>{item}</li>
+                <li key={i}>{item}</li>
              )
              }
             
@@ -60,16 +60,16 @@ class ProfessionalPart extends Component {
          }
          </ul>
         
-         <div className="image">
+         <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" className="image">
            {
-             this.state.image.map(item=>{
-                if(item == "/static/media/dct2x.360e19e7.png"){
+             this.state.image.map((item,i)=>{
+                if(item === "/static/media/dct2x.360e19e7.png"){
                   return(
-                    <img key={item} className="works-mobile" src={this.state.image}/>
+                    <img alt='mobile' key={i} className="works-mobile" src={this.state.image}/>
                   )
                 }else{
                   return(
-                    <img key={item} className="works" src={this.state.image}/>
+                    <img alt='laptop' key={i} className="works" src={this.state.image}/>
                   )
                   
                 }

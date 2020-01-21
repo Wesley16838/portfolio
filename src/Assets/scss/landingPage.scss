@@ -166,12 +166,77 @@
 }
 .academic{
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
     width:100%;
     font-family: 'Playfair Display', serif;
+    padding:0px 5%; 
     h1{
         font-size: 60px;
         letter-spacing: 5px;
     }
+    .academic-section{
+        
+        column-count: 2;
+        column-gap: 5%;
+       
+        .academic-part{
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding:100px 50px 50px 50px;
+            border:2px solid #000;
+            margin-bottom: 60px;
+           
+            position: relative;
+            .school-detail{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .aca-image{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                margin:60px 0px;
+            }
+            .aca-title{
+                position: absolute;
+                top:-2px;
+                left:-2px;
+                margin: 0px;
+                background: #fff;
+                z-index: 999;
+                padding-left: 70px;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    height:100%;
+                    width:50px;
+                    background: #000;
+                    left:0px;
+                }
+            }
+            .image-aca{
+                width:400px;
+            }
+            .image-aca-mobile{
+                width:180px;
+            }
+            .aca-link{
+                float:right;
+                img{
+                    margin-right: 20px;
+                    width:50px;
+                    @include transition(.4s ease);
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+   
 }

@@ -421,10 +421,62 @@ h4 {
 
 .academic {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif;
+  padding: 0px 5%; }
   .academic h1 {
     font-size: 60px;
     letter-spacing: 5px; }
+  .academic .academic-section {
+    column-count: 2;
+    column-gap: 5%; }
+    .academic .academic-section .academic-part {
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 100px 50px 50px 50px;
+      border: 2px solid #000;
+      margin-bottom: 60px;
+      position: relative; }
+      .academic .academic-section .academic-part .school-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+      .academic .academic-section .academic-part .aca-image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 60px 0px; }
+      .academic .academic-section .academic-part .aca-title {
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        margin: 0px;
+        background: #fff;
+        z-index: 999;
+        padding-left: 70px; }
+        .academic .academic-section .academic-part .aca-title:before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 50px;
+          background: #000;
+          left: 0px; }
+      .academic .academic-section .academic-part .image-aca {
+        width: 400px; }
+      .academic .academic-section .academic-part .image-aca-mobile {
+        width: 180px; }
+      .academic .academic-section .academic-part .aca-link {
+        float: right; }
+        .academic .academic-section .academic-part .aca-link img {
+          margin-right: 20px;
+          width: 50px;
+          -webkit-transition: 0.4s ease;
+          -moz-transition: 0.4s ease;
+          transition: 0.4s ease; }
+          .academic .academic-section .academic-part .aca-link img:hover {
+            opacity: .7; }
