@@ -51,20 +51,20 @@ class Header extends Component {
                       media="(min-width: 1199px) and (max-width: 1479px)" 
                       className="me" 
                       
-                      srcset={me3}/>
+                      srcSet={me3}/>
                     <source 
                       media="(min-width: 1480px) and (max-width: 1679px)" 
                       className="me" 
                      
-                      srcset={me2}/>
+                      srcSet={me2}/>
                     <source 
                       media="(min-width: 1680px)" 
                       className="me" 
                      
-                      srcset={me}/>
+                      srcSet={me}/>
                     <img 
                       src={me}
-                      srcset={me}
+                      srcSet={me}
                       className="me" 
                       alt="Me"/>
                   </picture>

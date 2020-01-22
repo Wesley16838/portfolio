@@ -52,7 +52,7 @@ html{
 /*General Setting*/
 body{
     font-family: 'Roboto','Open Sans', sans-serif;
-    // font-size:16px;
+    
 }
 a{
     text-decoration-line: none;
@@ -60,17 +60,77 @@ a{
 }
 
 h1{
-    font-size:4.5rem;
+    
+    @include xxxl-width{
+            
+        font-size:4.5rem;
+    }
+    @include xxl-width{
+        
+        font-size:4.5rem;
+    }
+
+    @include xl-width{
+        font-size:4.5rem;
+    }
 }
 h2{
-    font-size:3.5rem;
+    
+    @include xxxl-width{
+            
+        font-size:3.5rem;
+    }
+    @include xxl-width{
+        
+        font-size:3.5rem;
+    }
+
+    @include xl-width{
+        font-size:3.5rem;
+    }
 }
 h3{
-    font-size:2.3rem;
+    
+    @include xxxl-width{
+            
+        font-size:2.3rem;
+    }
+    @include xxl-width{
+        
+        font-size:2.3rem;
+    }
+
+    @include xl-width{
+        font-size:2.3rem;
+    }
 }
 h4{
-    font-size:1.8rem;
+   
+    @include xxxl-width{
+            
+        font-size:1.8rem;
+    }
+    @include xxl-width{
+        
+        font-size:1.8rem;
+    }
+
+    @include xl-width{
+        font-size:1.75rem;
+    }
 }
 p{
-    font-size:1rem;
+    
+    @include xxxl-width{
+            
+        font-size:1rem;
+    }
+    @include xxl-width{
+        
+        font-size:1rem;
+    }
+
+    @include xl-width{
+        font-size:1rem;
+    }
 }
