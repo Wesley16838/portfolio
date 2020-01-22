@@ -45,14 +45,23 @@ class Header extends Component {
               <div data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
                   {/* <img src={me} /> */}
                   <picture>
+                  
+                   
                     <source 
-                      media="(max-width: 1200px)" 
+                      media="(min-width: 1199px) and (max-width: 1479px)" 
                       className="me" 
+                      
                       srcset={me3}/>
                     <source 
-                      media="(min-width: 1480px)" 
+                      media="(min-width: 1480px) and (max-width: 1679px)" 
                       className="me" 
+                     
                       srcset={me2}/>
+                    <source 
+                      media="(min-width: 1680px)" 
+                      className="me" 
+                     
+                      srcset={me}/>
                     <img 
                       src={me}
                       srcset={me}

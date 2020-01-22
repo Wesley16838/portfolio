@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     height:100vh;
-    weight:100vw;
+    width:100%;
     .header-left{
         display: flex;
         flex-direction: row;
@@ -125,8 +125,10 @@
        
      
         .me{
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
             height:100%;
+
+
         }
         .name{
            
@@ -241,7 +243,7 @@
         
         column-count: 2;
         column-gap: 5%;
-       
+        width:100%;
         .academic-part{
             display: inline-block;
             width: 100%;

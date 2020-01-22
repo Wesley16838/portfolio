@@ -52,7 +52,7 @@ html{
 /*General Setting*/
 body{
     font-family: 'Roboto','Open Sans', sans-serif;
-    font-size:16px;
+    // font-size:16px;
 }
 a{
     text-decoration-line: none;
@@ -60,14 +60,17 @@ a{
 }
 
 h1{
-    font-size:60px;
+    font-size:4.5rem;
 }
 h2{
-    font-size:45px;
+    font-size:3.5rem;
 }
 h3{
-    font-size:36px;
+    font-size:2.3rem;
 }
 h4{
-    font-size:20px;
+    font-size:1.8rem;
+}
+p{
+    font-size:1rem;
 }
