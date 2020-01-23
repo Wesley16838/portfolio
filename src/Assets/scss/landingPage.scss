@@ -20,7 +20,7 @@
         }
    
         @include xl-width{
-            width:calc(100% - 620px);
+            width:calc(100% - 650px);
         }
         .header-left-left{
             display: flex;
@@ -99,7 +99,7 @@
         }
    
         @include xl-width{
-            width:620px;
+            width:650px;
         }
         .header-right-left{
             height:100vh;

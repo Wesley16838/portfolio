@@ -55,7 +55,7 @@ class Header extends Component {
                       media="(min-width: 1199px) and (max-width: 1479px)" 
                       className="me" 
                       
-                      srcSet={me2}/>
+                      srcSet={me3}/>
                     <source 
                       media="(min-width: 1480px) and (max-width: 1679px)" 
                       className="me" 

@@ -241,7 +241,7 @@ a {
         width: calc(100% - 900px); } }
     @media all and (max-width: 1480px) {
       .header .header-left {
-        width: calc(100% - 620px); } }
+        width: calc(100% - 650px); } }
     .header .header-left .header-left-left {
       display: flex;
       flex-direction: column;
@@ -290,7 +290,7 @@ a {
         width: 900px; } }
     @media all and (max-width: 1480px) {
       .header .header-right {
-        width: 620px; } }
+        width: 650px; } }
     .header .header-right .header-right-left {
       height: 100vh;
       display: flex;
