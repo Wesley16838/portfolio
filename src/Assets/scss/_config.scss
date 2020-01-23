@@ -71,7 +71,7 @@ h1{
     }
 
     @include xl-width{
-        font-size:4.5rem;
+        font-size:3rem;
     }
 }
 h2{
@@ -86,7 +86,7 @@ h2{
     }
 
     @include xl-width{
-        font-size:3.5rem;
+        font-size:2.25rem;
     }
 }
 h3{
@@ -101,7 +101,7 @@ h3{
     }
 
     @include xl-width{
-        font-size:2.3rem;
+        font-size:1.75rem;
     }
 }
 h4{
@@ -115,8 +115,8 @@ h4{
         font-size:1.8rem;
     }
 
-    @include xl-width{
-        font-size:1.75rem;
+    @include xl-width{ 
+        font-size:1.125rem; 
     }
 }
 p{

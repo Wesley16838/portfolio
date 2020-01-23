@@ -22,7 +22,7 @@ a {
 
 @media all and (max-width: 1480px) {
   h1 {
-    font-size: 4.5rem; } }
+    font-size: 3rem; } }
 
 @media all and (min-width: 1680px) {
   h2 {
@@ -34,7 +34,7 @@ a {
 
 @media all and (max-width: 1480px) {
   h2 {
-    font-size: 3.5rem; } }
+    font-size: 2.25rem; } }
 
 @media all and (min-width: 1680px) {
   h3 {
@@ -46,19 +46,19 @@ a {
 
 @media all and (max-width: 1480px) {
   h3 {
-    font-size: 2.3rem; } }
-
-@media all and (min-width: 1680px) {
-  h4 {
-    font-size: 1.8rem; } }
-
-@media all and (min-width: 1480px) and (max-width: 1680px) {
-  h4 {
-    font-size: 1.8rem; } }
-
-@media all and (max-width: 1480px) {
-  h4 {
     font-size: 1.75rem; } }
+
+@media all and (min-width: 1680px) {
+  h4 {
+    font-size: 1.8rem; } }
+
+@media all and (min-width: 1480px) and (max-width: 1680px) {
+  h4 {
+    font-size: 1.8rem; } }
+
+@media all and (max-width: 1480px) {
+  h4 {
+    font-size: 1.125rem; } }
 
 @media all and (min-width: 1680px) {
   p {
@@ -88,18 +88,19 @@ a {
     background: #fff; }
 
 .basicBtn_reverse {
-  color: #2B64FF;
+  color: #000;
   background: #fff;
-  padding: 15px 0px;
-  width: 300px;
-  text-align: center;
-  border: 2px solid #fff;
+  padding: 15px 60px;
+  border: 2px solid #000;
+  font-size: 20px;
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   transition: 0.2s ease; }
   .basicBtn_reverse:hover {
+    color: #000;
+    background: #fff;
     color: #fff;
-    background: rgba(0, 0, 0, 0); }
+    background: #000; }
 
 .spinner {
   animation: rotator 1.4s linear infinite; }
@@ -174,7 +175,7 @@ a {
 
 @media all and (max-width: 1480px) {
   h1 {
-    font-size: 4.5rem; } }
+    font-size: 3rem; } }
 
 @media all and (min-width: 1680px) {
   h2 {
@@ -186,7 +187,7 @@ a {
 
 @media all and (max-width: 1480px) {
   h2 {
-    font-size: 3.5rem; } }
+    font-size: 2.25rem; } }
 
 @media all and (min-width: 1680px) {
   h3 {
@@ -198,19 +199,19 @@ a {
 
 @media all and (max-width: 1480px) {
   h3 {
-    font-size: 2.3rem; } }
-
-@media all and (min-width: 1680px) {
-  h4 {
-    font-size: 1.8rem; } }
-
-@media all and (min-width: 1480px) and (max-width: 1680px) {
-  h4 {
-    font-size: 1.8rem; } }
-
-@media all and (max-width: 1480px) {
-  h4 {
     font-size: 1.75rem; } }
+
+@media all and (min-width: 1680px) {
+  h4 {
+    font-size: 1.8rem; } }
+
+@media all and (min-width: 1480px) and (max-width: 1680px) {
+  h4 {
+    font-size: 1.8rem; } }
+
+@media all and (max-width: 1480px) {
+  h4 {
+    font-size: 1.125rem; } }
 
 @media all and (min-width: 1680px) {
   p {
@@ -246,28 +247,37 @@ a {
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
-      padding: 60px 0px 60px 60px;
       font-family: 'Playfair Display', serif; }
+      @media all and (min-width: 1680px) {
+        .header .header-left .header-left-left {
+          padding: 60px 0px 60px 60px; } }
+      @media all and (min-width: 1480px) and (max-width: 1680px) {
+        .header .header-left .header-left-left {
+          padding: 60px 0px 60px 60px; } }
+      @media all and (max-width: 1480px) {
+        .header .header-left .header-left-left {
+          padding: 30px 0px 30px 30px; } }
       .header .header-left .header-left-left .detail h1 {
-        font-size: 70px;
         margin: 0px;
         letter-spacing: 5px; }
-      .header .header-left .header-left-left .detail p {
-        font-size: 30px;
+      .header .header-left .header-left-left .detail h4 {
         margin: 10px 0px; }
       .header .header-left .header-left-left .logo {
         width: 100px;
         height: 100px; }
       .header .header-left .header-left-left .welcome h1 {
-        font-size: 70px;
         margin: 10px 0px;
         letter-spacing: 5px; }
-      .header .header-left .header-left-left .welcome p {
-        font-size: 30px;
+      .header .header-left .header-left-left .welcome h4 {
         margin: 10px 0px; }
-      .header .header-left .header-left-left .basicBtn {
+      .header .header-left .header-left-left .basicBtn, .header .header-left .header-left-left .basicBtn_reverse {
         display: inline-block;
         margin-top: 10px; }
+      .header .header-left .header-left-left .btn-group {
+        display: flex;
+        flex-direction: row; }
+        .header .header-left .header-left-left .btn-group a {
+          margin-right: 15px; }
   .header .header-right {
     font-family: 'Ibarra Real Nova', serif;
     display: flex;
@@ -313,8 +323,8 @@ a {
           .header .header-right .header-right-left .developer {
             font-size: 100px; } }
     .header .header-right .me {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-      height: 99%; }
+      height: 99%;
+      margin-top: 0.5%; }
     .header .header-right .name {
       display: flex;
       align-items: center;
@@ -429,14 +439,15 @@ a {
       display: inline-block;
       width: 100%;
       box-sizing: border-box;
-      padding: 100px 50px 50px 50px;
+      padding: 60px 50px 50px 50px;
       border: 2px solid #000;
       margin-bottom: 60px;
       position: relative; }
       .academic .academic-section .academic-part .school-detail {
         display: flex;
         flex-direction: row;
-        justify-content: space-between; }
+        justify-content: space-between;
+        color: #979696; }
       @media all and (min-width: 1680px) {
         .academic .academic-section .academic-part .aca-image {
           display: flex;

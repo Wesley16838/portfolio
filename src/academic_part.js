@@ -35,12 +35,12 @@ class Academicpart extends Component {
     return(
       <div data-aos="fade-in" data-aos-duration="1000" className="academic-part">
         <h1 className="aca-title">{this.state.title}</h1>
-      
-        <p data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">{this.state.intro}</p>
         <div data-aos="fade-in" data-aos-duration="500" data-aos-delay="500" className="school-detail">
             <p>{this.state.school}, {this.state.location}</p>
             <p>{this.state.date}</p>
         </div>
+        <p data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">{this.state.intro}</p>
+       
         <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"  className='aca-image'>
             {
                 this.state.image.map((item,i)=>{

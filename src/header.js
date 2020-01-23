@@ -23,14 +23,18 @@ class Header extends Component {
                     <img src={logo} className='logo' alt="Logo"/>
                 </div>
                 <div className="detail">
-                    <p>Hello, I am</p>
+                    <h4>Hello, I am</h4>
                     <h1>WEI-HSUAN</h1>
                     <h1>WONG</h1>
-                    <p>Web &amp; Mobile Developer</p>
-                    <a href="https://github.com/Wesley16838/resume/blob/master/Resume2020.pdf" className="basicBtn">Resume</a>
+                    <h4>Web &amp; Mobile Developer</h4>
+                    <div className='btn-group'>
+                      <a href="https://github.com/Wesley16838/resume/blob/master/Resume2020.pdf" target="_blank" rel="noopener noreferrer" className="basicBtn">Resume</a>
+                      <a href="https://github.com/Wesley16838/" target="_blank" rel="noopener noreferrer" className="basicBtn_reverse">GitHub</a>
+                    </div>
+                    
                 </div>
                 <div className="welcome">
-                    <p>Welcome to my</p>
+                    <h4>Welcome to my</h4>
                     <h1>
                         PORTFOLIO
                     </h1>
@@ -51,7 +55,7 @@ class Header extends Component {
                       media="(min-width: 1199px) and (max-width: 1479px)" 
                       className="me" 
                       
-                      srcSet={me3}/>
+                      srcSet={me2}/>
                     <source 
                       media="(min-width: 1480px) and (max-width: 1679px)" 
                       className="me" 

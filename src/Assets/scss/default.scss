@@ -16,16 +16,17 @@
     }
 }
 .basicBtn_reverse{
-    color:$blue;
-    background: $white;
-    padding: 15px 0px;
-    width: 300px;
-    text-align: center;
-    border:2px solid $white;
-    @include transition(.2s ease);
+  color:$black;
+  background: $white;
+  padding:15px 60px;
+  border:2px solid $black;
+  font-size:20px;
+  @include transition(.2s ease);
     &:hover{
-       color:$white;
-       background: rgba(0, 0, 0, 0);
+      color:$black;
+      background: $white;
+      color:$white;
+      background: $black;
        
     }
 }
