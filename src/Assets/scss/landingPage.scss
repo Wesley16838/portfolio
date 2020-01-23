@@ -6,6 +6,12 @@
     flex-direction: row;
     height:100vh;
     width:100%;
+    @include md-width{
+        background-image: url('./../img/mobile_m3@2x.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .header-left{
         display: flex;
         flex-direction: row;
@@ -24,6 +30,9 @@
         }
         @include lg-width{
             width:calc(100% - 650px);
+        }
+        @include md-width{
+            width:100%;
         }
         .header-left-left{
             display: flex;
@@ -46,6 +55,10 @@
             }
             @include lg-width{
                 padding:30px 0px 30px 30px;  
+            }
+            @include md-width{
+                padding:30px 0px 30px 30px;  
+                color:#fff;
             }
             font-family: 'Playfair Display', serif;
                 .detail{
@@ -109,6 +122,9 @@
         }
         @include lg-width{
             width:650px;
+        }
+        @include md-width{
+            display: none;
         }
         .header-right-left{
             height:100vh;
@@ -220,6 +236,9 @@
             padding:60px;
             margin-bottom: 60px;
             margin-left: 5%;
+            @include md-width{
+                width:90%;
+            }
             span{
                 position: absolute;
                 top:-25px;
@@ -252,6 +271,9 @@
                 @include lg-width{
                     flex-direction: column;
                 }
+                @include md-width{
+                    flex-direction: row;
+                }
             }
             h1{
                 font-size:36px;
@@ -279,6 +301,9 @@
                 @include lg-width{
                     width:300px;
                 }
+                @include md-width{
+                    width:500px;
+                }
             }
             .works-mobile{
               
@@ -296,6 +321,9 @@
                 }
                 @include lg-width{
                     width:150px;
+                }
+                @include md-width{
+                    width:200px;
                 }
             }
             .works-big{
@@ -343,6 +371,9 @@
         column-count: 2;
         column-gap: 5%;
         width:100%;
+        @include md-width{
+            column-count: 1;
+        }
         .academic-part{
             display: inline-block;
             width: 100%;
@@ -377,6 +408,9 @@
                 @include lg-width{
                     flex-direction: column;
                 }
+                @include md-width{
+                    flex-direction: row;
+                }
             }
             .aca-image{
                 display: flex;
@@ -401,7 +435,7 @@
             }
             .aca-title{
                 position: absolute;
-                top:-2px;
+                top:-3px;
                 left:-2px;
                 margin: 0px;
                 background: #fff;

@@ -22,6 +22,14 @@ a {
 
 @media all and (min-width: 1200px) and (max-width: 1480px) {
   h1 {
+    font-size: 4.5rem; } }
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  h1 {
+    font-size: 4rem; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  h1 {
     font-size: 3rem; } }
 
 @media all and (min-width: 1680px) {
@@ -34,7 +42,15 @@ a {
 
 @media all and (min-width: 1200px) and (max-width: 1480px) {
   h2 {
-    font-size: 2.25rem; } }
+    font-size: 3rem; } }
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  h2 {
+    font-size: 3rem; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  h2 {
+    font-size: 3rem; } }
 
 @media all and (min-width: 1680px) {
   h3 {
@@ -45,6 +61,14 @@ a {
     font-size: 2.3rem; } }
 
 @media all and (min-width: 1200px) and (max-width: 1480px) {
+  h3 {
+    font-size: 2rem; } }
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  h3 {
+    font-size: 2rem; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
   h3 {
     font-size: 1.75rem; } }
 
@@ -58,7 +82,15 @@ a {
 
 @media all and (min-width: 1200px) and (max-width: 1480px) {
   h4 {
-    font-size: 1.125rem; } }
+    font-size: 1.55rem; } }
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  h4 {
+    font-size: 1.55rem; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  h4 {
+    font-size: 1.55rem; } }
 
 @media all and (min-width: 1680px) {
   p {
@@ -72,12 +104,21 @@ a {
   p {
     font-size: 1rem; } }
 
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  p {
+    font-size: 1rem; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  p {
+    font-size: 1rem; } }
+
 .basicBtn {
   color: #fff;
   background: #000;
   z-index: 999;
   border: 2px solid #000;
   font-size: 20px;
+  font-weight: bold;
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   transition: 0.2s ease; }
@@ -91,6 +132,9 @@ a {
     .basicBtn {
       padding: 15px 60px; } }
   @media all and (min-width: 992px) and (max-width: 1200px) {
+    .basicBtn {
+      padding: 15px 40px; } }
+  @media all and (min-width: 768px) and (max-width: 992px) {
     .basicBtn {
       padding: 15px 40px; } }
   .basicBtn:hover {
@@ -98,6 +142,9 @@ a {
     background: #000;
     color: #000;
     background: #fff; }
+    @media all and (min-width: 768px) and (max-width: 992px) {
+      .basicBtn:hover {
+        background: rgba(0, 0, 0, 0); } }
 
 .basicBtn_reverse {
   color: #000;
@@ -105,6 +152,7 @@ a {
   z-index: 999;
   border: 2px solid #000;
   font-size: 20px;
+  font-weight: bold;
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   transition: 0.2s ease; }
@@ -120,11 +168,19 @@ a {
   @media all and (min-width: 992px) and (max-width: 1200px) {
     .basicBtn_reverse {
       padding: 15px 40px; } }
+  @media all and (min-width: 768px) and (max-width: 992px) {
+    .basicBtn_reverse {
+      padding: 15px 40px;
+      border: 2px solid #fff; } }
   .basicBtn_reverse:hover {
     color: #000;
     background: #fff;
     color: #fff;
     background: #000; }
+    @media all and (min-width: 768px) and (max-width: 992px) {
+      .basicBtn_reverse:hover {
+        background: rgba(255, 255, 255, 0);
+        border: 2px solid #fff; } }
 
 .spinner {
   animation: rotator 1.4s linear infinite; }
@@ -199,6 +255,14 @@ a {
 
 @media all and (min-width: 1200px) and (max-width: 1480px) {
   h1 {
+    font-size: 4.5rem; } }
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  h1 {
+    font-size: 4rem; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  h1 {
     font-size: 3rem; } }
 
 @media all and (min-width: 1680px) {
@@ -211,7 +275,15 @@ a {
 
 @media all and (min-width: 1200px) and (max-width: 1480px) {
   h2 {
-    font-size: 2.25rem; } }
+    font-size: 3rem; } }
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  h2 {
+    font-size: 3rem; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  h2 {
+    font-size: 3rem; } }
 
 @media all and (min-width: 1680px) {
   h3 {
@@ -222,6 +294,14 @@ a {
     font-size: 2.3rem; } }
 
 @media all and (min-width: 1200px) and (max-width: 1480px) {
+  h3 {
+    font-size: 2rem; } }
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  h3 {
+    font-size: 2rem; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
   h3 {
     font-size: 1.75rem; } }
 
@@ -235,7 +315,15 @@ a {
 
 @media all and (min-width: 1200px) and (max-width: 1480px) {
   h4 {
-    font-size: 1.125rem; } }
+    font-size: 1.55rem; } }
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  h4 {
+    font-size: 1.55rem; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  h4 {
+    font-size: 1.55rem; } }
 
 @media all and (min-width: 1680px) {
   p {
@@ -249,11 +337,25 @@ a {
   p {
     font-size: 1rem; } }
 
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  p {
+    font-size: 1rem; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  p {
+    font-size: 1rem; } }
+
 .header {
   display: flex;
   flex-direction: row;
   height: 100vh;
   width: 100%; }
+  @media all and (min-width: 768px) and (max-width: 992px) {
+    .header {
+      background-image: url("./../img/mobile_m3@2x.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; } }
   .header .header-left {
     display: flex;
     flex-direction: row; }
@@ -269,6 +371,9 @@ a {
     @media all and (min-width: 992px) and (max-width: 1200px) {
       .header .header-left {
         width: calc(100% - 650px); } }
+    @media all and (min-width: 768px) and (max-width: 992px) {
+      .header .header-left {
+        width: 100%; } }
     .header .header-left .header-left-left {
       display: flex;
       flex-direction: column;
@@ -287,6 +392,10 @@ a {
       @media all and (min-width: 992px) and (max-width: 1200px) {
         .header .header-left .header-left-left {
           padding: 30px 0px 30px 30px; } }
+      @media all and (min-width: 768px) and (max-width: 992px) {
+        .header .header-left .header-left-left {
+          padding: 30px 0px 30px 30px;
+          color: #fff; } }
       .header .header-left .header-left-left .detail h1 {
         margin: 0px;
         letter-spacing: 5px; }
@@ -324,6 +433,9 @@ a {
     @media all and (min-width: 992px) and (max-width: 1200px) {
       .header .header-right {
         width: 650px; } }
+    @media all and (min-width: 768px) and (max-width: 992px) {
+      .header .header-right {
+        display: none; } }
     .header .header-right .header-right-left {
       height: 100vh;
       display: flex;
@@ -407,6 +519,9 @@ a {
       padding: 60px;
       margin-bottom: 60px;
       margin-left: 5%; }
+      @media all and (min-width: 768px) and (max-width: 992px) {
+        .professional .professional-section .professional-part {
+          width: 90%; } }
       .professional .professional-section .professional-part span {
         position: absolute;
         top: -25px;
@@ -433,6 +548,9 @@ a {
         @media all and (min-width: 992px) and (max-width: 1200px) {
           .professional .professional-section .professional-part .company-detail {
             flex-direction: column; } }
+        @media all and (min-width: 768px) and (max-width: 992px) {
+          .professional .professional-section .professional-part .company-detail {
+            flex-direction: row; } }
       .professional .professional-section .professional-part h1 {
         font-size: 36px;
         margin: 0px; }
@@ -451,6 +569,9 @@ a {
       @media all and (min-width: 992px) and (max-width: 1200px) {
         .professional .professional-section .professional-part .works {
           width: 300px; } }
+      @media all and (min-width: 768px) and (max-width: 992px) {
+        .professional .professional-section .professional-part .works {
+          width: 500px; } }
       @media all and (min-width: 1680px) {
         .professional .professional-section .professional-part .works-mobile {
           width: 180px; } }
@@ -463,6 +584,9 @@ a {
       @media all and (min-width: 992px) and (max-width: 1200px) {
         .professional .professional-section .professional-part .works-mobile {
           width: 150px; } }
+      @media all and (min-width: 768px) and (max-width: 992px) {
+        .professional .professional-section .professional-part .works-mobile {
+          width: 200px; } }
       @media all and (min-width: 1680px) {
         .professional .professional-section .professional-part .works-big {
           width: 700px; } }
@@ -496,6 +620,9 @@ a {
     column-count: 2;
     column-gap: 5%;
     width: 100%; }
+    @media all and (min-width: 768px) and (max-width: 992px) {
+      .academic .academic-section {
+        column-count: 1; } }
     .academic .academic-section .academic-part {
       display: inline-block;
       width: 100%;
@@ -527,6 +654,9 @@ a {
         @media all and (min-width: 992px) and (max-width: 1200px) {
           .academic .academic-section .academic-part .school-detail {
             flex-direction: column; } }
+        @media all and (min-width: 768px) and (max-width: 992px) {
+          .academic .academic-section .academic-part .school-detail {
+            flex-direction: row; } }
       .academic .academic-section .academic-part .aca-image {
         display: flex;
         flex-direction: row;
@@ -541,7 +671,7 @@ a {
             flex-direction: column; } }
       .academic .academic-section .academic-part .aca-title {
         position: absolute;
-        top: -2px;
+        top: -3px;
         left: -2px;
         margin: 0px;
         background: #fff;

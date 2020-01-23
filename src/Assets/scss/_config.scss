@@ -37,6 +37,18 @@ $xxxl:1680px;
                     @content;
               }
     }
+//md
+@mixin md-width() {
+    @media all and (min-width: $md) and (max-width: $lg) {
+                    @content;
+              }
+    }
+//sm
+@mixin sm-width() {
+    @media all and (min-width: $sm) and (max-width: $md) {
+                    @content;
+            }
+    }
 /*Mixins*/
 @mixin translateY($e) {
     -webkit-transform: translateY($e);
@@ -76,8 +88,14 @@ h1{
     }
 
     @include xl-width{
-        font-size:3rem;
+        font-size:4.5rem;
     }
+    @include lg-width{
+        font-size:4rem;
+      }
+      @include md-width{
+        font-size:3rem;
+              }
 }
 h2{
     
@@ -91,8 +109,14 @@ h2{
     }
 
     @include xl-width{
-        font-size:2.25rem;
+        font-size:3rem;
     }
+    @include lg-width{
+        font-size:3rem;
+      }
+      @include md-width{
+        font-size:3rem;
+              }
 }
 h3{
     
@@ -106,8 +130,14 @@ h3{
     }
 
     @include xl-width{
-        font-size:1.75rem;
+        font-size:2rem;
     }
+    @include lg-width{
+        font-size:2rem;
+      }
+      @include md-width{
+        font-size:1.75rem;
+              }
 }
 h4{
    
@@ -121,8 +151,14 @@ h4{
     }
 
     @include xl-width{ 
-        font-size:1.125rem; 
+        font-size:1.55rem; 
     }
+    @include lg-width{
+        font-size:1.55rem;
+      }
+      @include md-width{
+        font-size:1.55rem;
+              }
 }
 p{
     
@@ -138,4 +174,10 @@ p{
     @include xl-width{
         font-size:1rem;
     }
+    @include lg-width{
+        font-size:1rem;
+      }
+      @include md-width{
+        font-size:1rem;
+              }
 }
