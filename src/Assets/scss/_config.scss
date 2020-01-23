@@ -27,11 +27,16 @@ $xxxl:1680px;
       }
 //xl
 @mixin xl-width() {
-  @media all and (max-width: $xxl) {
+  @media all and (min-width: $xl) and (max-width: $xxl) {
                   @content;
             }
   }
-
+//lg
+@mixin lg-width() {
+    @media all and (min-width: $lg) and (max-width: $xl) {
+                    @content;
+              }
+    }
 /*Mixins*/
 @mixin translateY($e) {
     -webkit-transform: translateY($e);

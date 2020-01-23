@@ -24,7 +24,7 @@ class Academic extends Component {
         <Academicpart title='PriCov' intro='Data Visualization Price Comparison Website' school='Stevens Institute of Technology' location='Hoboken, NJ' date='Fall 2019' image={[pricov]} content='Allows users to search products from eBay and Amazon using data 
 mining and visualizing  data as different charts' git='https://github.com/Wesley16838/PriCov' url='https://pricovfrontend.herokuapp.com/
 ' front='React.js/Apollo/SCSS/Gulp/d3.js' back='GraphQL/MongoDB/Atlas//Heroku/Firebase' mining='Python/Selenium'/>
-        <Academicpart title='Wonderful Bookstore' intro='A RWD online bookstore - iOS App &amp; Web' school='Stevens Institute of Technology' location='Hoboken, NJ' date='Spring 2019' image={[responsive,ios]} content='Features includes sign up, log in, Cart(add,
+        <Academicpart title='Walker Bookstore' intro='A RWD online bookstore - iOS App &amp; Web' school='Stevens Institute of Technology' location='Hoboken, NJ' date='Spring 2019' image={[responsive,ios]} content='Features includes sign up, log in, Cart(add,
  remove, update and place order), Search 
 books and display books in the page. This 
 project cover security using JWT to 

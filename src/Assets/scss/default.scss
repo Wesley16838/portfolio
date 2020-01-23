@@ -3,9 +3,24 @@
 .basicBtn{
     color:$white;
     background: $black;
-    padding:15px 60px;
+    z-index: 999;
     border:2px solid $black;
     font-size:20px;
+    @include xxxl-width{
+            
+      padding:15px 60px;
+  }
+    @include xxl-width{
+        
+      padding:15px 60px;
+    }
+
+    @include xl-width{
+      padding:15px 60px;
+    }
+    @include lg-width{
+      padding:15px 40px;
+    }
     @include transition(.2s ease);
     &:hover{
        color:$white;
@@ -18,9 +33,24 @@
 .basicBtn_reverse{
   color:$black;
   background: $white;
-  padding:15px 60px;
+  z-index: 999;
   border:2px solid $black;
   font-size:20px;
+  @include xxxl-width{
+            
+    padding:15px 60px;
+}
+  @include xxl-width{
+      
+    padding:15px 60px;
+  }
+
+  @include xl-width{
+    padding:15px 60px;
+  }
+  @include lg-width{
+    padding:15px 40px;
+  }
   @include transition(.2s ease);
     &:hover{
       color:$black;

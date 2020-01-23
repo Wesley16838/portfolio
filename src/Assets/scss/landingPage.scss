@@ -22,6 +22,9 @@
         @include xl-width{
             width:calc(100% - 650px);
         }
+        @include lg-width{
+            width:calc(100% - 650px);
+        }
         .header-left-left{
             display: flex;
             flex-direction: column;
@@ -39,6 +42,9 @@
             }
        
             @include xl-width{
+                padding:30px 0px 30px 30px;  
+            }
+            @include lg-width{
                 padding:30px 0px 30px 30px;  
             }
             font-family: 'Playfair Display', serif;
@@ -101,6 +107,9 @@
         @include xl-width{
             width:650px;
         }
+        @include lg-width{
+            width:650px;
+        }
         .header-right-left{
             height:100vh;
             display: flex;
@@ -118,6 +127,9 @@
             }
        
             @include xl-width{
+                width:100px;
+            }
+            @include lg-width{
                 width:100px;
             }
             .developer{
@@ -139,6 +151,9 @@
            
                 @include xl-width{
                     font-size:100px;
+                }
+                @include lg-width{
+                    font-size:90px;
                 }
             }
         }
@@ -165,6 +180,9 @@
             }
        
             @include xl-width{
+                width:100%;
+            }
+            @include lg-width{
                 width:100%;
             }
             p{
@@ -217,16 +235,31 @@
             }
             .company-detail{
                 display: flex;
-                flex-direction: row;
+               
                 justify-content: space-between;
+                @include xxxl-width{
+            
+                    flex-direction: row;
+                }
+                @include xxl-width{
+                    
+                    flex-direction: row;
+                }
+           
+                @include xl-width{
+                    flex-direction: row;
+                }
+                @include lg-width{
+                    flex-direction: column;
+                }
             }
             h1{
                 font-size:36px;
                 margin:0px;
             }
-            h3{
-                font-size:20px;
-                color:rgb(185, 185, 185);
+            p{
+                // font-size:20px;
+                color:rgb(160, 160, 160);
                 margin:0px;
             }
             .works{
@@ -241,6 +274,9 @@
                 }
            
                 @include xl-width{
+                    width:300px;
+                }
+                @include lg-width{
                     width:300px;
                 }
             }
@@ -258,6 +294,9 @@
                 @include xl-width{
                     width:150px;
                 }
+                @include lg-width{
+                    width:150px;
+                }
             }
             .works-big{
                 
@@ -272,6 +311,9 @@
            
                 @include xl-width{
                     width:450px;
+                }
+                @include lg-width{
+                    width:300px;
                 }
             }
             .image{
@@ -308,38 +350,54 @@
             padding:60px 50px 50px 50px;
             border:2px solid #000;
             margin-bottom: 60px;
-           
+            @include xl-width{
+                padding:100px 50px 50px 50px;
+            }
+            @include lg-width{
+                padding:100px 50px 50px 50px;
+            }
             position: relative;
             .school-detail{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 color:rgb(151, 150, 150);
+                @include xxxl-width{
+            
+                    width:700px;
+                }
+                @include xxl-width{
+                    
+                    width:550px;
+                }
+           
+                @include xl-width{
+                    flex-direction: column;
+                }
+                @include lg-width{
+                    flex-direction: column;
+                }
             }
             .aca-image{
-               
-                @include xxxl-width{
-                    display: flex;
+                display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-around;
                     margin:60px 0px;
-                }
-                @include xxl-width{
-                    display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-around;
-                margin:60px 0px;
-                }
+               
            
                 @include xl-width{
-                    display: flex;
+                 
                     flex-direction: column;
-                    align-items: center;
-                    justify-content: space-around;
-                    margin:60px 0px;
+                   
                 }
+                @include lg-width{
+                   
+                    flex-direction: column;
+                   
+                }
+
+
             }
             .aca-title{
                 position: absolute;
@@ -360,6 +418,13 @@
             }
             .image-aca{
                 width:400px;
+               
+                
+           
+               
+                @include lg-width{
+                    width:300px;
+                }
             }
             .image-aca-mobile{
                 width:180px;

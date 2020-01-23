@@ -50,9 +50,13 @@ class Header extends Component {
                   {/* <img src={me} /> */}
                   <picture>
                   
-                   
+                  <source 
+                      media="(min-width: 992px) and (max-width: 1199px)" 
+                      className="me" 
+                      
+                      srcSet={me3}/>
                     <source 
-                      media="(min-width: 1199px) and (max-width: 1479px)" 
+                      media="(min-width: 1200px) and (max-width: 1479px)" 
                       className="me" 
                       
                       srcSet={me3}/>

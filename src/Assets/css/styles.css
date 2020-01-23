@@ -20,7 +20,7 @@ a {
   h1 {
     font-size: 4.5rem; } }
 
-@media all and (max-width: 1480px) {
+@media all and (min-width: 1200px) and (max-width: 1480px) {
   h1 {
     font-size: 3rem; } }
 
@@ -32,7 +32,7 @@ a {
   h2 {
     font-size: 3.5rem; } }
 
-@media all and (max-width: 1480px) {
+@media all and (min-width: 1200px) and (max-width: 1480px) {
   h2 {
     font-size: 2.25rem; } }
 
@@ -44,7 +44,7 @@ a {
   h3 {
     font-size: 2.3rem; } }
 
-@media all and (max-width: 1480px) {
+@media all and (min-width: 1200px) and (max-width: 1480px) {
   h3 {
     font-size: 1.75rem; } }
 
@@ -56,7 +56,7 @@ a {
   h4 {
     font-size: 1.8rem; } }
 
-@media all and (max-width: 1480px) {
+@media all and (min-width: 1200px) and (max-width: 1480px) {
   h4 {
     font-size: 1.125rem; } }
 
@@ -68,19 +68,31 @@ a {
   p {
     font-size: 1rem; } }
 
-@media all and (max-width: 1480px) {
+@media all and (min-width: 1200px) and (max-width: 1480px) {
   p {
     font-size: 1rem; } }
 
 .basicBtn {
   color: #fff;
   background: #000;
-  padding: 15px 60px;
+  z-index: 999;
   border: 2px solid #000;
   font-size: 20px;
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   transition: 0.2s ease; }
+  @media all and (min-width: 1680px) {
+    .basicBtn {
+      padding: 15px 60px; } }
+  @media all and (min-width: 1480px) and (max-width: 1680px) {
+    .basicBtn {
+      padding: 15px 60px; } }
+  @media all and (min-width: 1200px) and (max-width: 1480px) {
+    .basicBtn {
+      padding: 15px 60px; } }
+  @media all and (min-width: 992px) and (max-width: 1200px) {
+    .basicBtn {
+      padding: 15px 40px; } }
   .basicBtn:hover {
     color: #fff;
     background: #000;
@@ -90,12 +102,24 @@ a {
 .basicBtn_reverse {
   color: #000;
   background: #fff;
-  padding: 15px 60px;
+  z-index: 999;
   border: 2px solid #000;
   font-size: 20px;
   -webkit-transition: 0.2s ease;
   -moz-transition: 0.2s ease;
   transition: 0.2s ease; }
+  @media all and (min-width: 1680px) {
+    .basicBtn_reverse {
+      padding: 15px 60px; } }
+  @media all and (min-width: 1480px) and (max-width: 1680px) {
+    .basicBtn_reverse {
+      padding: 15px 60px; } }
+  @media all and (min-width: 1200px) and (max-width: 1480px) {
+    .basicBtn_reverse {
+      padding: 15px 60px; } }
+  @media all and (min-width: 992px) and (max-width: 1200px) {
+    .basicBtn_reverse {
+      padding: 15px 40px; } }
   .basicBtn_reverse:hover {
     color: #000;
     background: #fff;
@@ -173,7 +197,7 @@ a {
   h1 {
     font-size: 4.5rem; } }
 
-@media all and (max-width: 1480px) {
+@media all and (min-width: 1200px) and (max-width: 1480px) {
   h1 {
     font-size: 3rem; } }
 
@@ -185,7 +209,7 @@ a {
   h2 {
     font-size: 3.5rem; } }
 
-@media all and (max-width: 1480px) {
+@media all and (min-width: 1200px) and (max-width: 1480px) {
   h2 {
     font-size: 2.25rem; } }
 
@@ -197,7 +221,7 @@ a {
   h3 {
     font-size: 2.3rem; } }
 
-@media all and (max-width: 1480px) {
+@media all and (min-width: 1200px) and (max-width: 1480px) {
   h3 {
     font-size: 1.75rem; } }
 
@@ -209,7 +233,7 @@ a {
   h4 {
     font-size: 1.8rem; } }
 
-@media all and (max-width: 1480px) {
+@media all and (min-width: 1200px) and (max-width: 1480px) {
   h4 {
     font-size: 1.125rem; } }
 
@@ -221,7 +245,7 @@ a {
   p {
     font-size: 1rem; } }
 
-@media all and (max-width: 1480px) {
+@media all and (min-width: 1200px) and (max-width: 1480px) {
   p {
     font-size: 1rem; } }
 
@@ -239,7 +263,10 @@ a {
     @media all and (min-width: 1480px) and (max-width: 1680px) {
       .header .header-left {
         width: calc(100% - 900px); } }
-    @media all and (max-width: 1480px) {
+    @media all and (min-width: 1200px) and (max-width: 1480px) {
+      .header .header-left {
+        width: calc(100% - 650px); } }
+    @media all and (min-width: 992px) and (max-width: 1200px) {
       .header .header-left {
         width: calc(100% - 650px); } }
     .header .header-left .header-left-left {
@@ -254,7 +281,10 @@ a {
       @media all and (min-width: 1480px) and (max-width: 1680px) {
         .header .header-left .header-left-left {
           padding: 60px 0px 60px 60px; } }
-      @media all and (max-width: 1480px) {
+      @media all and (min-width: 1200px) and (max-width: 1480px) {
+        .header .header-left .header-left-left {
+          padding: 30px 0px 30px 30px; } }
+      @media all and (min-width: 992px) and (max-width: 1200px) {
         .header .header-left .header-left-left {
           padding: 30px 0px 30px 30px; } }
       .header .header-left .header-left-left .detail h1 {
@@ -288,7 +318,10 @@ a {
     @media all and (min-width: 1480px) and (max-width: 1680px) {
       .header .header-right {
         width: 900px; } }
-    @media all and (max-width: 1480px) {
+    @media all and (min-width: 1200px) and (max-width: 1480px) {
+      .header .header-right {
+        width: 650px; } }
+    @media all and (min-width: 992px) and (max-width: 1200px) {
       .header .header-right {
         width: 650px; } }
     .header .header-right .header-right-left {
@@ -303,7 +336,10 @@ a {
       @media all and (min-width: 1480px) and (max-width: 1680px) {
         .header .header-right .header-right-left {
           width: 130px; } }
-      @media all and (max-width: 1480px) {
+      @media all and (min-width: 1200px) and (max-width: 1480px) {
+        .header .header-right .header-right-left {
+          width: 100px; } }
+      @media all and (min-width: 992px) and (max-width: 1200px) {
         .header .header-right .header-right-left {
           width: 100px; } }
       .header .header-right .header-right-left .developer {
@@ -319,9 +355,12 @@ a {
         @media all and (min-width: 1480px) and (max-width: 1680px) {
           .header .header-right .header-right-left .developer {
             font-size: 120px; } }
-        @media all and (max-width: 1480px) {
+        @media all and (min-width: 1200px) and (max-width: 1480px) {
           .header .header-right .header-right-left .developer {
             font-size: 100px; } }
+        @media all and (min-width: 992px) and (max-width: 1200px) {
+          .header .header-right .header-right-left .developer {
+            font-size: 90px; } }
     .header .header-right .me {
       height: 99%;
       margin-top: 0.5%; }
@@ -335,7 +374,10 @@ a {
       @media all and (min-width: 1480px) and (max-width: 1680px) {
         .header .header-right .name {
           width: 100%; } }
-      @media all and (max-width: 1480px) {
+      @media all and (min-width: 1200px) and (max-width: 1480px) {
+        .header .header-right .name {
+          width: 100%; } }
+      @media all and (min-width: 992px) and (max-width: 1200px) {
         .header .header-right .name {
           width: 100%; } }
       .header .header-right .name p {
@@ -378,14 +420,24 @@ a {
             opacity: .7; }
       .professional .professional-section .professional-part .company-detail {
         display: flex;
-        flex-direction: row;
         justify-content: space-between; }
+        @media all and (min-width: 1680px) {
+          .professional .professional-section .professional-part .company-detail {
+            flex-direction: row; } }
+        @media all and (min-width: 1480px) and (max-width: 1680px) {
+          .professional .professional-section .professional-part .company-detail {
+            flex-direction: row; } }
+        @media all and (min-width: 1200px) and (max-width: 1480px) {
+          .professional .professional-section .professional-part .company-detail {
+            flex-direction: row; } }
+        @media all and (min-width: 992px) and (max-width: 1200px) {
+          .professional .professional-section .professional-part .company-detail {
+            flex-direction: column; } }
       .professional .professional-section .professional-part h1 {
         font-size: 36px;
         margin: 0px; }
-      .professional .professional-section .professional-part h3 {
-        font-size: 20px;
-        color: #b9b9b9;
+      .professional .professional-section .professional-part p {
+        color: #a0a0a0;
         margin: 0px; }
       @media all and (min-width: 1680px) {
         .professional .professional-section .professional-part .works {
@@ -393,7 +445,10 @@ a {
       @media all and (min-width: 1480px) and (max-width: 1680px) {
         .professional .professional-section .professional-part .works {
           width: 400px; } }
-      @media all and (max-width: 1480px) {
+      @media all and (min-width: 1200px) and (max-width: 1480px) {
+        .professional .professional-section .professional-part .works {
+          width: 300px; } }
+      @media all and (min-width: 992px) and (max-width: 1200px) {
         .professional .professional-section .professional-part .works {
           width: 300px; } }
       @media all and (min-width: 1680px) {
@@ -402,7 +457,10 @@ a {
       @media all and (min-width: 1480px) and (max-width: 1680px) {
         .professional .professional-section .professional-part .works-mobile {
           width: 180px; } }
-      @media all and (max-width: 1480px) {
+      @media all and (min-width: 1200px) and (max-width: 1480px) {
+        .professional .professional-section .professional-part .works-mobile {
+          width: 150px; } }
+      @media all and (min-width: 992px) and (max-width: 1200px) {
         .professional .professional-section .professional-part .works-mobile {
           width: 150px; } }
       @media all and (min-width: 1680px) {
@@ -411,9 +469,12 @@ a {
       @media all and (min-width: 1480px) and (max-width: 1680px) {
         .professional .professional-section .professional-part .works-big {
           width: 550px; } }
-      @media all and (max-width: 1480px) {
+      @media all and (min-width: 1200px) and (max-width: 1480px) {
         .professional .professional-section .professional-part .works-big {
           width: 450px; } }
+      @media all and (min-width: 992px) and (max-width: 1200px) {
+        .professional .professional-section .professional-part .works-big {
+          width: 300px; } }
       .professional .professional-section .professional-part .image {
         display: flex;
         align-items: center;
@@ -443,32 +504,41 @@ a {
       border: 2px solid #000;
       margin-bottom: 60px;
       position: relative; }
+      @media all and (min-width: 1200px) and (max-width: 1480px) {
+        .academic .academic-section .academic-part {
+          padding: 100px 50px 50px 50px; } }
+      @media all and (min-width: 992px) and (max-width: 1200px) {
+        .academic .academic-section .academic-part {
+          padding: 100px 50px 50px 50px; } }
       .academic .academic-section .academic-part .school-detail {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         color: #979696; }
-      @media all and (min-width: 1680px) {
-        .academic .academic-section .academic-part .aca-image {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          margin: 60px 0px; } }
-      @media all and (min-width: 1480px) and (max-width: 1680px) {
-        .academic .academic-section .academic-part .aca-image {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          margin: 60px 0px; } }
-      @media all and (max-width: 1480px) {
-        .academic .academic-section .academic-part .aca-image {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          margin: 60px 0px; } }
+        @media all and (min-width: 1680px) {
+          .academic .academic-section .academic-part .school-detail {
+            width: 700px; } }
+        @media all and (min-width: 1480px) and (max-width: 1680px) {
+          .academic .academic-section .academic-part .school-detail {
+            width: 550px; } }
+        @media all and (min-width: 1200px) and (max-width: 1480px) {
+          .academic .academic-section .academic-part .school-detail {
+            flex-direction: column; } }
+        @media all and (min-width: 992px) and (max-width: 1200px) {
+          .academic .academic-section .academic-part .school-detail {
+            flex-direction: column; } }
+      .academic .academic-section .academic-part .aca-image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 60px 0px; }
+        @media all and (min-width: 1200px) and (max-width: 1480px) {
+          .academic .academic-section .academic-part .aca-image {
+            flex-direction: column; } }
+        @media all and (min-width: 992px) and (max-width: 1200px) {
+          .academic .academic-section .academic-part .aca-image {
+            flex-direction: column; } }
       .academic .academic-section .academic-part .aca-title {
         position: absolute;
         top: -2px;
@@ -486,6 +556,9 @@ a {
           left: 0px; }
       .academic .academic-section .academic-part .image-aca {
         width: 400px; }
+        @media all and (min-width: 992px) and (max-width: 1200px) {
+          .academic .academic-section .academic-part .image-aca {
+            width: 300px; } }
       .academic .academic-section .academic-part .image-aca-mobile {
         width: 180px; }
         @media all and (min-width: 1680px) {
@@ -494,7 +567,7 @@ a {
         @media all and (min-width: 1480px) and (max-width: 1680px) {
           .academic .academic-section .academic-part .image-aca-mobile {
             width: 180px; } }
-        @media all and (max-width: 1480px) {
+        @media all and (min-width: 1200px) and (max-width: 1480px) {
           .academic .academic-section .academic-part .image-aca-mobile {
             width: 180px;
             margin-top: 60px; } }
