@@ -94,10 +94,10 @@ h1{
     }
 
     @include xl-width{
-        font-size:4.5rem;
+        font-size:3.5rem;
     }
     @include lg-width{
-        font-size:4rem;
+        font-size:3.5rem;
     }
     @include md-width{
         font-size:3.5rem;
@@ -178,16 +178,16 @@ h4{
         font-size:1.55rem; 
     }
     @include lg-width{
-        font-size:1.55rem;
+        font-size:1.25rem;
       }
     @include md-width{
-        font-size:1.55rem;
+        font-size:1.25rem;
     }
     @include sm-width{
-        font-size:1.55rem;
+        font-size:1.25rem;
     } 
     @include xs-width{
-        font-size:1.25rem;
+        font-size:1.15rem;
     } 
 }
 p{
