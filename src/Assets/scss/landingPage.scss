@@ -489,16 +489,23 @@
             display: inline-block;
             width: 100%;
             box-sizing: border-box;
-            padding:80px 50px 50px 50px;
+            padding:60px 50px 50px 50px;
             border:2px solid #000;
             margin-bottom: 60px;
             @include xl-width{
-                padding:100px 50px 50px 50px;
+                padding:60px 50px 50px 50px;
             }
             @include lg-width{
                 padding:100px 50px 50px 50px;
             }
             position: relative;
+            h1{
+                font-size:36px;
+                margin:0px;
+                @include xs-width{
+                    font-size:30px;
+                }
+            }
             .school-detail{
                 display: flex;
                 flex-direction: row;

@@ -850,16 +850,22 @@ a {
       display: inline-block;
       width: 100%;
       box-sizing: border-box;
-      padding: 80px 50px 50px 50px;
+      padding: 60px 50px 50px 50px;
       border: 2px solid #000;
       margin-bottom: 60px;
       position: relative; }
       @media all and (min-width: 1200px) and (max-width: 1480px) {
         .academic .academic-section .academic-part {
-          padding: 100px 50px 50px 50px; } }
+          padding: 60px 50px 50px 50px; } }
       @media all and (min-width: 992px) and (max-width: 1200px) {
         .academic .academic-section .academic-part {
           padding: 100px 50px 50px 50px; } }
+      .academic .academic-section .academic-part h1 {
+        font-size: 36px;
+        margin: 0px; }
+        @media all and (min-width: 0) and (max-width: 576px) {
+          .academic .academic-section .academic-part h1 {
+            font-size: 30px; } }
       .academic .academic-section .academic-part .school-detail {
         display: flex;
         flex-direction: row;
