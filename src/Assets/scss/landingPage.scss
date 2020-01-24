@@ -498,6 +498,9 @@
             @include lg-width{
                 padding:100px 50px 50px 50px;
             }
+            @include xs-width{
+                padding:100px 50px 50px 50px;
+            }
             position: relative;
             h1{
                 font-size:36px;

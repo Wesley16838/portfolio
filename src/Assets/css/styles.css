@@ -860,6 +860,9 @@ a {
       @media all and (min-width: 992px) and (max-width: 1200px) {
         .academic .academic-section .academic-part {
           padding: 100px 50px 50px 50px; } }
+      @media all and (min-width: 0) and (max-width: 576px) {
+        .academic .academic-section .academic-part {
+          padding: 100px 50px 50px 50px; } }
       .academic .academic-section .academic-part h1 {
         font-size: 36px;
         margin: 0px; }

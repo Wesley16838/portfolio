@@ -35,11 +35,11 @@ class Academicpart extends Component {
     return(
       <div data-aos="fade-in" className="academic-part">
         <h1 className="aca-title">{this.state.title}</h1>
-        <div data-aos="fade-in" data-aos-delay="500" className="school-detail">
+        <div className="school-detail">
             <p>{this.state.school}, {this.state.location}</p>
             <p>{this.state.date}</p>
         </div>
-        <p data-aos="fade-in"  data-aos-delay="500">{this.state.intro}</p>
+        <p >{this.state.intro}</p>
        
         <div data-aos="fade-up"  data-aos-delay="500"  className='aca-image'>
             {
@@ -54,8 +54,8 @@ class Academicpart extends Component {
             }
            
         </div>
-        <p data-aos="fade-in"  data-aos-delay="500">{this.state.content}</p>
-        <p data-aos="fade-in"  data-aos-delay="500">Front-end : {this.state.front}</p>
+        <p>{this.state.content}</p>
+        <p>Front-end : {this.state.front}</p>
         {back}
         {mine}
         <div className='aca-link'>
