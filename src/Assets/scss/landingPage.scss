@@ -12,6 +12,18 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+    @include sm-width{
+        background-image: url('./../img/mobile_m3@2x.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include xs-width{
+        background-image: url('./../img/mobile_m3@2x.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    } 
     .header-left{
         display: flex;
         flex-direction: row;
@@ -34,6 +46,12 @@
         @include md-width{
             width:100%;
         }
+        @include sm-width{
+            width:100%;
+        }
+        @include xs-width{
+            width:100%;
+        } 
         .header-left-left{
             display: flex;
             flex-direction: column;
@@ -60,6 +78,14 @@
                 padding:30px 0px 30px 30px;  
                 color:#fff;
             }
+            @include sm-width{
+                padding:15px 0px 15px 15px;  
+                color:#fff;
+            }
+            @include xs-width{
+                padding:15px 0px 15px 15px;  
+                color:#fff;
+            } 
             font-family: 'Playfair Display', serif;
                 .detail{
                     h1{
@@ -77,6 +103,14 @@
                  .logo{
                     width:100px;
                     height:100px;
+                    @include sm-width{
+                        width:50px;
+                        height:50px;
+                    }
+                    @include xs-width{
+                        width:50px;
+                        height:50px;
+                    } 
                 }         
                 .welcome{
                     h1{
@@ -126,6 +160,12 @@
         @include md-width{
             display: none;
         }
+        @include sm-width{
+            display: none;
+        }
+        @include xs-width{
+            display: none;
+        } 
         .header-right-left{
             height:100vh;
             display: flex;
@@ -148,6 +188,7 @@
             @include lg-width{
                 width:100px;
             }
+           
             .developer{
                
                 font-weight: bold;
@@ -216,35 +257,61 @@
     align-items: center;
     width:100%;
     font-family: 'Playfair Display', serif;
-  
+    padding:0px 5%;
+    box-sizing: border-box;
     h1{
         font-size: 60px;
         letter-spacing: 5px;
+        @include md-width{
+            font-size: 36px;
+            margin:45px 0px;
+        }
+        @include sm-width{
+            font-size: 36px;
+            margin:45px 0px;
+        }
+        @include xs-width{
+            font-size: 30px;
+            margin:45px 0px;
+        } 
     }
     .professional-section{
         width:100%;
         display: flex;
         flex-direction: row;
         flex-wrap:wrap;
-        // justify-content: space-evenly;
+        justify-content: space-between;
         
         .professional-part{
             box-sizing: border-box;
             position: relative;
-            width:42.5%;
+            width:47.5%;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.103), 0 6px 6px rgba(0, 0, 0, 0.164);
             padding:60px;
             margin-bottom: 60px;
-            margin-left: 5%;
+            // margin-left: 5%;
             @include md-width{
-                width:90%;
+                width:100%;
             }
+            @include sm-width{
+                width:100%;
+            }
+            @include xs-width{
+                width:100%;
+            } 
             span{
                 position: absolute;
                 top:-25px;
                 left:-25px;
+                @include xs-width{
+                    top:-15px;
+                left:-15px;
+                }
                 img{
                     width:50px;
+                    @include xs-width{
+                        width:40px;
+                    }
                     @include transition(.4s ease);
                     &:hover{
                         opacity: .7;
@@ -274,10 +341,19 @@
                 @include md-width{
                     flex-direction: row;
                 }
+                @include sm-width{
+                    flex-direction: row;
+                }
+                @include xs-width{
+                    flex-direction: column;
+                }
             }
             h1{
                 font-size:36px;
                 margin:0px;
+                @include xs-width{
+                    font-size:30px;
+                }
             }
             p{
                 // font-size:20px;
@@ -304,6 +380,12 @@
                 @include md-width{
                     width:500px;
                 }
+                @include sm-width{
+                    width:350px;
+                }
+                @include xs-width{
+                    width:300px;
+                }
             }
             .works-mobile{
               
@@ -324,6 +406,12 @@
                 }
                 @include md-width{
                     width:200px;
+                }
+                @include sm-width{
+                    width:180px;
+                }
+                @include xs-width{
+                    width:180px;
                 }
             }
             .works-big{
@@ -349,7 +437,12 @@
                 align-items: center;
                 justify-content: center;
                 height:450px;
-
+                @include sm-width{
+                    height:400px;
+                }
+                @include xs-width{
+                    height:400px;
+                }
             }
         }
     }
@@ -363,8 +456,20 @@
     font-family: 'Playfair Display', serif;
     padding:0px 5%; 
     h1{
-        font-size: 36px;
+        font-size: 60px;
         letter-spacing: 5px;
+        @include md-width{
+            font-size: 36px;
+            margin:45px 0px;
+        }
+        @include sm-width{
+            font-size: 36px;
+            margin:45px 0px;
+        }
+        @include xs-width{
+            font-size: 30px;
+            margin:45px 0px;
+        }
     }
     .academic-section{
         
@@ -374,11 +479,17 @@
         @include md-width{
             column-count: 1;
         }
+        @include sm-width{
+            column-count: 1;
+        }
+        @include xs-width{
+            column-count: 1;
+        }
         .academic-part{
             display: inline-block;
             width: 100%;
             box-sizing: border-box;
-            padding:60px 50px 50px 50px;
+            padding:80px 50px 50px 50px;
             border:2px solid #000;
             margin-bottom: 60px;
             @include xl-width{
@@ -411,6 +522,12 @@
                 @include md-width{
                     flex-direction: row;
                 }
+                @include sm-width{
+                    flex-direction: column;
+                }
+                @include xs-width{
+                    flex-direction: column;
+                }
             }
             .aca-image{
                 display: flex;
@@ -430,12 +547,21 @@
                     flex-direction: column;
                    
                 }
-
+                @include sm-width{
+                   
+                    flex-direction: column;
+                   
+                }
+                @include xs-width{
+                   
+                    flex-direction: column;
+                   
+                }
 
             }
             .aca-title{
                 position: absolute;
-                top:-3px;
+                top:-2px;
                 left:-2px;
                 margin: 0px;
                 background: #fff;
@@ -449,15 +575,19 @@
                     background: #000;
                     left:0px;
                 }
+               
             }
             .image-aca{
                 width:400px;
-               
-                
-           
-               
-                @include lg-width{
+                @include sm-width{
+                   
+                    width:350px;
+                   
+                }
+                @include xs-width{
+                   
                     width:300px;
+                   
                 }
             }
             .image-aca-mobile{
@@ -473,11 +603,30 @@
                     width:180px;
                     margin-top:60px;
                 }
+                @include sm-width{
+                   
+                    margin:30px;
+                   
+                }
+                @include xs-width{
+                   
+                    margin:30px;
+                   
+                }
+
             }
             .aca-link{
                 float:right;
+                @include xs-width{
+                   
+                    margin-top: 30px;
+                   
+                }
+                
+            
+
                 img{
-                    margin-right: 20px;
+                    margin-left: 20px;
                     width:50px;
                     @include transition(.4s ease);
                     &:hover{

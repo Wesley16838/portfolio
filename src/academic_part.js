@@ -33,15 +33,15 @@ class Academicpart extends Component {
         back = <p data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">Back-end : {this.state.back}</p>
     }
     return(
-      <div data-aos="fade-in" data-aos-duration="1000" className="academic-part">
+      <div data-aos="fade-in" className="academic-part">
         <h1 className="aca-title">{this.state.title}</h1>
-        <div data-aos="fade-in" data-aos-duration="500" data-aos-delay="500" className="school-detail">
+        <div data-aos="fade-in" data-aos-delay="500" className="school-detail">
             <p>{this.state.school}, {this.state.location}</p>
             <p>{this.state.date}</p>
         </div>
-        <p data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">{this.state.intro}</p>
+        <p data-aos="fade-in"  data-aos-delay="500">{this.state.intro}</p>
        
-        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"  className='aca-image'>
+        <div data-aos="fade-up"  data-aos-delay="500"  className='aca-image'>
             {
                 this.state.image.map((item,i)=>{
                     if(item === '/static/media/ios2x.57d594e7.png' || item === '/static/media/vatm2x.5ad401cd.png'){
@@ -54,8 +54,8 @@ class Academicpart extends Component {
             }
            
         </div>
-        <p data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">{this.state.content}</p>
-        <p data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">Front-end : {this.state.front}</p>
+        <p data-aos="fade-in"  data-aos-delay="500">{this.state.content}</p>
+        <p data-aos="fade-in"  data-aos-delay="500">Front-end : {this.state.front}</p>
         {back}
         {mine}
         <div className='aca-link'>
