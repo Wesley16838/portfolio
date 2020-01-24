@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import MetaTags from 'react-meta-tags';
 //includes
 import './Assets/css/styles.min.css'//css file
 import './Assets/js/scripts.min.js'//js file
@@ -33,7 +34,12 @@ class App extends Component {
      
       <Router>
          <div className="App">
-      
+         <MetaTags>
+            <title>Portfolio</title>
+            <meta name="description" content="Wesley Portfolio" />
+            <meta property="og:title" content="Portfolio" />
+            <meta property="og:image" content="landing.png" />
+         </MetaTags>
           <Switch>
             <Route exact path="/" render={(props) => <Landingpage {...props} title="Portfolio"/>}/>
             
