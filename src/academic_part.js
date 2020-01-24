@@ -26,6 +26,12 @@ class Academicpart extends Component {
   render() {
     let mine;
     let back;
+    let url;
+    if(this.state.url !== ''){
+        url  =  <a href={this.state.url} target='_blank' rel="noopener noreferrer">
+        <img alt='external_url' src={link}/>
+    </a>
+    }
     if(this.state.mining !== ''){
         mine = <p data-aos="fade-in" data-aos-duration="500" data-aos-delay="500">Data mining : {this.state.mining}</p>
     }
@@ -59,9 +65,7 @@ class Academicpart extends Component {
         {back}
         {mine}
         <div className='aca-link'>
-            <a href={this.state.url} target='_blank' rel="noopener noreferrer">
-                <img alt='external_url' src={link}/>
-            </a>
+           {url}
             <a href={this.state.git} target='_blank' rel="noopener noreferrer">
                 <img alt='git' src={git}/>
             </a>
