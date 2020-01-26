@@ -51,7 +51,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
